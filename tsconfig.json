@@ -1,0 +1,36 @@
+{
+   "compileOnSave": false,
+   "compilerOptions": {
+     "allowJs": true,                            // 允许编译javascript文件。
+     "allowUnreachableCode": true,               // 不报告执行不到的代码错误
+     "allowSyntheticDefaultImports": true,       // 引入
+     "strict": false,                            // 启用所有严格的类型检查选项
+     "noImplicitAny": false,                     // 在表达式和声明上有隐含的any类型时报错。
+     "jsx": "react",                             // 指定JSX代码生成: 'preserve', 'react-native', or 'react'. */
+     "target": "es5",                            // 指定ECMAScript目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019' or 'ESNEXT'. */
+     "lib": [ "dom", "es2015" ],                 // 需要解析的语法
+     "module": "commonjs",                       // 指定模块代码生成: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */
+     "types": ["node"],
+     "outDir": "./dist/",                        // 输出目录
+     "esModuleInterop":true,                     // 标记导入
+     "sourceMap": true,
+     "baseUrl": ".",
+     "paths": {                                  // 用于引入某个`module`
+       "@/*": ["src/*"],
+       "@pages/*": ["src/pages/*"],
+       "@assets/*": ["src/assets/*"],
+       "@components/*": ["src/components/*"],
+       "@lib/*": ["src/lib/*"],
+     }
+   },
+    "awesomeTypescriptLoaderOptions": {
+      "forkChecker": true
+    },
+    "include": [
+      "./src"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+ }
+ 
